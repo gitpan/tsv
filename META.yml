@@ -1,13 +1,28 @@
-# http://module-build.sourceforge.net/META-spec.html
-#XXXXXXX This is a prototype!!!  It will change in the future!!! XXXXX#
-name:         tsv
-version:      0.3
-version_from: tsv
-installdirs:  site
+---
+abstract: 'tsv file manipulation utility'
+author:
+  - 'David Muir Sharnoff <muir@idiom.org>'
+build_requires:
+  File::Slurp: 0
+  File::Temp: 0
+  FindBin: 0
+configure_requires:
+  ExtUtils::MakeMaker: 0
+dynamic_config: 1
+generated_by: 'ExtUtils::MakeMaker version 6.62, CPAN::Meta::Converter version 2.112150'
+license: unknown
+meta-spec:
+  url: http://module-build.sourceforge.net/META-spec-v1.4.html
+  version: 1.4
+name: tsv
+no_index:
+  directory:
+    - t
+    - inc
 requires:
-    Getopt::Long:                  0
-    List::Util:                    0
-    Pod::Usage:                    0
-
-distribution_type: module
-generated_by: ExtUtils::MakeMaker version 6.30
+  Getopt::Long: 0
+  List::Util: 0
+  Pod::Usage: 0
+resources:
+  repository: http://github.com/muir/tsv.pl
+version: 0.4
